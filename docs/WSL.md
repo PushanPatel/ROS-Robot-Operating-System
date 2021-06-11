@@ -99,6 +99,15 @@ sudo apt update
 ```
 sudo apt install x11-apps
 ```
+After installation is complete, try the following command to check whether the installation was complete or not:
+```
+xcalc
+```
+A calculator should pop up. If not, check whether your have entered correct IP Address in your Bashrc file(in Step 6). Don't include {} along with your IP address. To get your WSL's IP address run:
+```
+ifconfig
+```
+If you are using this command for first time you will be prompted to install net-tools package. Install it and run the command again. The inet address is the IPv4 address you require.
 
 (The complete documentation for WSL installation is also given here: [Microsoft](https://docs.microsoft.com/en-us/windows/wsl/install-win10))
 
