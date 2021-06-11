@@ -90,6 +90,17 @@ rosdep update
 
 (The complete documentation for ROS installation is also given here: [ROS](http://wiki.ros.org/noetic/Installation/Ubuntu))
 
+To verify your ROS installation, run the following code in your Ubuntu terminal:
+```
+roscore
+```
+This will turn on your ROS core. If no error then run the following code in another Ubuntu terminal:
+```
+rqt_graph
+```
+A window will pop up, if not then there might be some problem with GUI interface such as X server(for WSL installation only) might not be working properly. 
+To turn off ros core, press CTRL+C
+
 **Congratulations! You have successfully installed and set up ROS.** 
 
 Now, you can start with the [first tutorial](../tutorials/create_a_ros_workspace.md).
